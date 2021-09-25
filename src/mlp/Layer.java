@@ -1,3 +1,5 @@
+package mlp;
+
 /**
  * 儲存一層的神經元
  * @author Afan Chen
@@ -7,7 +9,7 @@ public class Layer {
     public int Length;
 
     /**
-     * Layer of Neurons
+     * mlp.Layer of Neurons
      *
      * @param neuronsNumber 本層需要創建多少神經元
      * @param prevSize 上一層有多少神經元

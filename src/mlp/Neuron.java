@@ -1,3 +1,5 @@
+package mlp;
+
 /**
  * 神經元部分
  * @author Afan Chen

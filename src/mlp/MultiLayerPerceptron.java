@@ -1,3 +1,5 @@
+package mlp;
+
 import activationfunction.ActivationFunction;
 
 /**
