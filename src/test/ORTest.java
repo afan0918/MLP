@@ -3,13 +3,13 @@ package test;
 import activationfunction.Sigmoid;
 import mlp.MultiLayerPerceptron;
 
-public class ANDTest {
+public class ORTest {
     public static void main(String[] args) {
         int[] layers = {2, 3, 1};
         MultiLayerPerceptron mlp = new MultiLayerPerceptron(layers, 0.5, new Sigmoid());
 
         double[][] input = {{1, 1}, {1, 0}, {0, 1}, {0, 0}};
-        double[][] label = {{1}, {0}, {0}, {0}};
+        double[][] label = {{1}, {1}, {1}, {0}};
 
 //        mlp.fit(input,label,1000);
 //        上面這一段等價於下面，都可以
