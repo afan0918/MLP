@@ -1,3 +1,5 @@
+package perceptron;
+
 import java.util.ArrayList;
 import java.util.Random;
 
