@@ -1,5 +1,8 @@
 package mlp;
 
+
+import java.util.Random;
+
 /**
  * 神經元部分
  * @author Afan Chen
@@ -14,12 +17,14 @@ public class Neuron {
      * @param prevLayerSize 上一層神經元數量(接輸入
      */
     public Neuron(int prevLayerSize) {
+        Random random = new Random();
+        
         Weights = new double[prevLayerSize];
-        Bias = Math.random() / 10000000000000.0;
-        Delta = Math.random() / 10000000000000.0;
-        Value = Math.random() / 10000000000000.0;
+        Bias = random.nextGaussian();
+        Delta = random.nextGaussian();
+        Value = random.nextGaussian();
 
         for (int i = 0; i < Weights.length; i++)
-            Weights[i] = Math.random() / 10000000000000.0;
+            Weights[i] = random.nextGaussian();
     }
 }
